@@ -1,18 +1,28 @@
-thrive-api
-Este repositório contém o código-fonte do backend da aplicação de controle financeiro Thrive. A API foi desenvolvida para suportar as funcionalidades do aplicativo, focando na gestão de usuários e dados financeiros.
+# Thrive API
 
-Tecnologias Utilizadas
-Node.js & Express: Frameworks para construção da API REST.
+Backend da aplicação de controle financeiro **Thrive**, desenvolvido para gerenciar usuários e transações de forma segura e escalável.
 
-PostgreSQL: Banco de dados relacional para persistência de dados.
+## Tecnologias Utilizadas
 
-bcrypt: Biblioteca para hash seguro de senhas.
+- **Node.js** e **Express** – Desenvolvimento da API REST.  
+- **PostgreSQL** – Banco de dados relacional.  
+- **bcrypt** – Hash seguro de senhas.  
+- **dotenv** – Gerenciamento de variáveis de ambiente.  
+- **JWT (JSON Web Token)** – Autenticação baseada em tokens.  
 
-dotenv: Gerenciamento de variáveis de ambiente.
+## Funcionalidades
 
-Funcionalidades Principais
-Registro de Usuários: Criação de novas contas com validação e hash de senhas.
+### Usuários
+- Registro com validação de dados e hash de senhas.  
+- Autenticação com geração de tokens JWT.  
+- Gerenciamento de perfis.  
 
-Autenticação: Gerencia o login de usuários, validando credenciais e gerando tokens de acesso seguro (JWT).
+### Transações
+- Criação, consulta, edição e exclusão de transações financeiras.  
+- Classificação por categorias.  
+- Controle de entradas e saídas.  
 
-Gerenciamento de Transações: Permite aos usuários criar, visualizar, editar e excluir 
+## Segurança
+- Armazenamento de senhas com bcrypt.  
+- Autenticação e autorização com JWT.  
+- Implementação de boas práticas para proteção contra SQL Injection e XSS.  
